@@ -1,5 +1,5 @@
 /**
- * Class name is BankAccount. This is about project 1 of Midterm Assignment.
+ * Class name is BankAccount. This is source code for the project.
  * It contains the information of bank account. 
  * 
  * @version JavaSE-16 25 October 2021
