@@ -2,5 +2,5 @@
 
 ### Duration : Fall Semester, 2021
 
-1. ATM GUI Program <br>
-2. Movie Reservation GUI Program
+- Project 1 : ATM GUI Program <br>
+- Project 2 : Movie Reservation GUI Program
