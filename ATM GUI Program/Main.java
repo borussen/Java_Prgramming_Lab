@@ -11,7 +11,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 /**
- * Class name is Main. This is about project 1 of Midterm Assignment.
+ * Class name is Main. This is source code for the project.
  * It implements 'ATM' program using GUI.
  * 
  * @version JavaSE-16 25 October 2021
@@ -390,9 +390,9 @@ public class Main {
 					}
 					// Output the execution result in Korean
 					else {
-						textbox.setText("»ç¿ëÀÚ: " +  bankAccounts.get(user).getBankUser().getName() + "\n" 
-	    						+ "ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n" 
-	    						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+						textbox.setText("ì‚¬ìš©ì: " +  bankAccounts.get(user).getBankUser().getName() + "\n" 
+	    						+ "ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n" 
+	    						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 					}
 					state = 4;  // Set 'state' to move on to the next stage 
 					type = 0;  // Set 'type' to distinguish the same 'state'
@@ -408,7 +408,7 @@ public class Main {
 						textbox.setText("Enter Withdrawal amount: ");
 					}
 					else {
-						textbox.setText("Ãâ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì¶œê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 					state = 5;  // Set 'state' to move on to the next stage 
 				}
@@ -423,7 +423,7 @@ public class Main {
 						textbox.setText("Enter Deposit amount: ");
 					}
 					else {
-						textbox.setText("ÀÔ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì…ê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 					state = 6;  // Set 'state' to move on to the next stage 
 				}
@@ -438,7 +438,7 @@ public class Main {
 						textbox.setText("Enter Account Number (Receiver): ");
 					}
 					else {
-						textbox.setText("°èÁÂ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä (¼ö½ÅÀÚ): ");
+						textbox.setText("ê³„ì¢Œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ìˆ˜ì‹ ì): ");
 					}
 					state = 7;  // Set 'state' to move on to the next stage 
 				}
@@ -540,78 +540,78 @@ public class Main {
 					// Change the content displayed in the text box into Korean in consideration of the 'state' and 'type' and print it out
 					if (state == 1) {
 						if (type == 1) {
-							textbox.setText("»ç¿ëÀÚ¿¡ ÀÇÇØ ÁøÇàÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù! ¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì‚¬ìš©ìì— ì˜í•´ ì§„í–‰ì´ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤! ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 2) {
-							textbox.setText("ÀúÈñ ÀºÇàÀ» ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì €í¬ ì€í–‰ì„ ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else {
-							textbox.setText("Ä«µå¸¦ ³ÖÀº µÚ ¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì¹´ë“œë¥¼ ë„£ì€ ë’¤ ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 					}	
 					else if (state == 2) {
 						if (type == 1) {
-							textbox.setText("Àß¸øµÈ ÇÉ ¹øÈ£ÀÔ´Ï´Ù! ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.\n" + "ÇÉ ¹øÈ£: ");
+							textbox.setText("ì˜ëª»ëœ í•€ ë²ˆí˜¸ì…ë‹ˆë‹¤! ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.\n" + "í•€ ë²ˆí˜¸: ");
 						}
 						else {
-							textbox.setText("ÇÉ ¹øÈ£: ");
+							textbox.setText("í•€ ë²ˆí˜¸: ");
 						}
 					}
 					else if (state == 3) {
-						textbox.setText("¾î¼­¿À¼¼¿ä, " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-    							+ "¿É¼ÇÀ» ¼±ÅÃÇØÁÖ¼¼¿ä.\n" 
-    							+ "OPTION 1: ÀÜ¾× È®ÀÎ\n"
-    							+ "OPTION 2: ¿¹±İ ÀÎÃâ\n"
-    							+ "OPTION 3: ÀÔ±İ\n"
-    							+ "OPTION 4: ¼Û±İ");
+						textbox.setText("ì–´ì„œì˜¤ì„¸ìš”, " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+    							+ "ì˜µì…˜ì„ ì„ íƒí•´ì£¼ì„¸ìš”.\n" 
+    							+ "OPTION 1: ì”ì•¡ í™•ì¸\n"
+    							+ "OPTION 2: ì˜ˆê¸ˆ ì¸ì¶œ\n"
+    							+ "OPTION 3: ì…ê¸ˆ\n"
+    							+ "OPTION 4: ì†¡ê¸ˆ");
 					}
 					else if (state == 4) {
 						if (type == 1) {
-							textbox.setText("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 2) {
-							textbox.setText("¼º°øÇß½À´Ï´Ù:)\n" 
-        							+ "»ç¿ëÀÚ: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-        							+ "Ãâ±İ¾×: " + String.format("%.2f", withdrawal) + "\n"
-        							+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
-        							+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì„±ê³µí–ˆìŠµë‹ˆë‹¤:)\n" 
+        							+ "ì‚¬ìš©ì: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+        							+ "ì¶œê¸ˆì•¡: " + String.format("%.2f", withdrawal) + "\n"
+        							+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
+        							+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 3) {
-							textbox.setText("¼º°øÇß½À´Ï´Ù:)\n" 
-	        						+ "»ç¿ëÀÚ: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-	        						+ "ÀÔ±İ¾×: " + String.format("%.2f", deposit) + "\n"
-	        						+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
-	        						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì„±ê³µí–ˆìŠµë‹ˆë‹¤:)\n" 
+	        						+ "ì‚¬ìš©ì: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+	        						+ "ì…ê¸ˆì•¡: " + String.format("%.2f", deposit) + "\n"
+	        						+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
+	        						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 4) {
-							textbox.setText("Àß¸øµÈ °èÁÂ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¿´½À´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì˜ëª»ëœ ê³„ì¢Œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 5) {
-							textbox.setText("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 						else if (type == 6) {
-							textbox.setText(("ÀÌÃ¼ ±İ¾×: " + String.format("%.2f", transfer) + "\n"
-            						+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
-            						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä..."));
+							textbox.setText(("ì´ì²´ ê¸ˆì•¡: " + String.format("%.2f", transfer) + "\n"
+            						+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n"
+            						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”..."));
 						}
 						else {
-							textbox.setText("»ç¿ëÀÚ: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-		    						+ "ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n" 
-		    						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+							textbox.setText("ì‚¬ìš©ì: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+		    						+ "ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance()) + "\n" 
+		    						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 						}
 					}
 					else if (state == 5) {
-						textbox.setText("Ãâ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì¶œê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 					else if (state == 6) {
-						textbox.setText("ÀÔ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì…ê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 					else if (state == 7) {
-						textbox.setText("°èÁÂ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä (¼ö½ÅÀÚ): ");
+						textbox.setText("ê³„ì¢Œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ìˆ˜ì‹ ì): ");
 					}
 					else if (state == 8) {
-						textbox.setText("ÀÌÃ¼ÇÏ½Ã·Á´Â °èÁÂÁÖ: " + bankAccounts.get(receiver).getBankUser().getName() +"\n"
-	    						+ "¼Û±İÇÏ½Ç ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì´ì²´í•˜ì‹œë ¤ëŠ” ê³„ì¢Œì£¼: " + bankAccounts.get(receiver).getBankUser().getName() +"\n"
+	    						+ "ì†¡ê¸ˆí•˜ì‹¤ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 				}
 			}
@@ -625,7 +625,7 @@ public class Main {
 						textbox.setText("Process is canceled by user! Please press Enter...");
 					}
 					else {
-						textbox.setText("»ç¿ëÀÚ¿¡ ÀÇÇØ ÁøÇàÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù! ¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+						textbox.setText("ì‚¬ìš©ìì— ì˜í•´ ì§„í–‰ì´ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤! ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 					}
 					state = 1;  // Set 'state' to return to the stage where the PIN number is input
 					type = 1;  // Set 'type' to distinguish the same 'state'
@@ -642,7 +642,7 @@ public class Main {
     						textbox.setText("Wrong pin! Try Again.\n" + "PIN: ");
     					}
     					else {
-    						textbox.setText("Àß¸øµÈ ÇÉ ¹øÈ£ÀÔ´Ï´Ù! ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.\n" + "ÇÉ ¹øÈ£: ");
+    						textbox.setText("ì˜ëª»ëœ í•€ ë²ˆí˜¸ì…ë‹ˆë‹¤! ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.\n" + "í•€ ë²ˆí˜¸: ");
     					}
 					}
 					else {
@@ -650,7 +650,7 @@ public class Main {
 							textbox.setText("PIN: ");
 						}
 						else {
-							textbox.setText("ÇÉ ¹øÈ£: ");
+							textbox.setText("í•€ ë²ˆí˜¸: ");
 						}
 					}
 				}
@@ -659,7 +659,7 @@ public class Main {
 						textbox.setText("Enter Withdrawal amount: ");
 					}
 					else {
-						textbox.setText("Ãâ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì¶œê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 				}
 				else if (state == 6) {
@@ -667,7 +667,7 @@ public class Main {
 						textbox.setText("Enter Deposit amount: ");
 					}
 					else {
-						textbox.setText("ÀÔ±İ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì…ê¸ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 				}
 				else if (state == 7) {
@@ -675,7 +675,7 @@ public class Main {
 						textbox.setText("Enter Account Number (Reciever): ");
 					}
 					else {
-						textbox.setText("°èÁÂ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä (¼ö½ÅÀÚ): ");
+						textbox.setText("ê³„ì¢Œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ìˆ˜ì‹ ì): ");
 					}
 				}
 				else if (state == 8) {
@@ -684,8 +684,8 @@ public class Main {
 	    						+ "Enter Transfer Amount: ");
 					}
 					else {
-						textbox.setText("ÀÌÃ¼ÇÏ½Ã·Á´Â °èÁÂÁÖ: " + bankAccounts.get(receiver).getBankUser().getName() +"\n"
-	    						+ "¼Û±İÇÏ½Ç ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+						textbox.setText("ì´ì²´í•˜ì‹œë ¤ëŠ” ê³„ì¢Œì£¼: " + bankAccounts.get(receiver).getBankUser().getName() +"\n"
+	    						+ "ì†¡ê¸ˆí•˜ì‹¤ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					}
 				}
 			}
@@ -700,7 +700,7 @@ public class Main {
 						textbox.setText("PIN: ");
 					}
 					else {
-						textbox.setText("ÇÉ ¹øÈ£: ");
+						textbox.setText("í•€ ë²ˆí˜¸: ");
 					}
         			state = 2;  // Set 'state' to move on to the next stage  
         			type = 0;  // Set 'type' to distinguish the same 'state'
@@ -723,12 +723,12 @@ public class Main {
             							+ "OPTION 4: Transfer");
         					}
         					else {
-        						textbox.setText("¾î¼­¿À¼¼¿ä, " + bankAccounts.get(i).getBankUser().getName() + "\n" 
-            							+ "¿É¼ÇÀ» ¼±ÅÃÇØÁÖ¼¼¿ä.\n" 
-            							+ "OPTION 1: ÀÜ¾× È®ÀÎ\n"
-            							+ "OPTION 2: ¿¹±İ ÀÎÃâ\n"
-            							+ "OPTION 3: ÀÔ±İ\n"
-            							+ "OPTION 4: ¼Û±İ");
+        						textbox.setText("ì–´ì„œì˜¤ì„¸ìš”, " + bankAccounts.get(i).getBankUser().getName() + "\n" 
+            							+ "ì˜µì…˜ì„ ì„ íƒí•´ì£¼ì„¸ìš”.\n" 
+            							+ "OPTION 1: ì”ì•¡ í™•ì¸\n"
+            							+ "OPTION 2: ì˜ˆê¸ˆ ì¸ì¶œ\n"
+            							+ "OPTION 3: ì…ê¸ˆ\n"
+            							+ "OPTION 4: ì†¡ê¸ˆ");
         					}
         					state = 3;  // Set 'state' to move on to the next stage  
         					user = i;  // Storing user index in ArrayList 'bankAccounts'
@@ -741,7 +741,7 @@ public class Main {
         						textbox.setText("Wrong pin! Try Again.\n" + "PIN: ");
         					}
         					else {
-        						textbox.setText("Àß¸øµÈ ÇÉ ¹øÈ£ÀÔ´Ï´Ù! ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.\n" + "ÇÉ ¹øÈ£: ");
+        						textbox.setText("ì˜ëª»ëœ í•€ ë²ˆí˜¸ì…ë‹ˆë‹¤! ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.\n" + "í•€ ë²ˆí˜¸: ");
         					}
         					type = 1;  // Set 'type' to distinguish the same 'state'
         				}
@@ -755,7 +755,7 @@ public class Main {
         				textbox.setText("Thank you for banking with us!\n" + "press ENTER...");
 					}
 					else {
-						textbox.setText("ÀúÈñ ÀºÇàÀ» ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+						textbox.setText("ì €í¬ ì€í–‰ì„ ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
 					}
         			state = 1;  // Set 'state' to return to the stage where the PIN number is input
         			type = 2;  // Set 'type' to distinguish the same 'state'
@@ -772,7 +772,7 @@ public class Main {
         					textbox.setText("Not enough money!\n" + "press ENTER...");
         				}
         				else {
-        					textbox.setText("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        					textbox.setText("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         				}
         				state = 4;  // Set 'state' to move on to the option execution completion stage
         				type = 1;  // Set 'type' to distinguish the same 'state'
@@ -787,11 +787,11 @@ public class Main {
         							+ "Press Enter...");
         				}
         				else {
-        					textbox.setText("¼º°øÇß½À´Ï´Ù:)\n" 
-        							+ "»ç¿ëÀÚ: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-        							+ "Ãâ±İ¾×: " + String.format("%.2f",withdrawal) + "\n"
-        							+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance() - withdrawal) + "\n"
-        							+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        					textbox.setText("ì„±ê³µí–ˆìŠµë‹ˆë‹¤:)\n" 
+        							+ "ì‚¬ìš©ì: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+        							+ "ì¶œê¸ˆì•¡: " + String.format("%.2f",withdrawal) + "\n"
+        							+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance() - withdrawal) + "\n"
+        							+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         				}
         				bankAccounts.get(user).setBalance(bankAccounts.get(user).getBalance() - withdrawal);  // Set user's updated balance
         				state = 4;  // Set 'state' to move on to the option execution completion stage
@@ -812,11 +812,11 @@ public class Main {
         						+ "Press Enter...");
         			}
         			else {
-        				textbox.setText("¼º°øÇß½À´Ï´Ù:)\n" 
-        						+ "»ç¿ëÀÚ: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
-        						+ "ÀÔ±İ¾×: " + String.format("%.2f", deposit) + "\n"
-        						+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance() + deposit) + "\n"
-        						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        				textbox.setText("ì„±ê³µí–ˆìŠµë‹ˆë‹¤:)\n" 
+        						+ "ì‚¬ìš©ì: " + bankAccounts.get(user).getBankUser().getName() + "\n" 
+        						+ "ì…ê¸ˆì•¡: " + String.format("%.2f", deposit) + "\n"
+        						+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance() + deposit) + "\n"
+        						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         			}
         			bankAccounts.get(user).setBalance(bankAccounts.get(user).getBalance() + deposit);  // Set user's updated balance
         			state = 4;  // Set 'state' to move on to the option execution completion stage
@@ -836,8 +836,8 @@ public class Main {
                 						+ "Enter Transfer Amount: ");
         					}
         					else {
-        						textbox.setText("ÀÌÃ¼ÇÏ½Ã·Á´Â °èÁÂÁÖ: " + bankAccounts.get(i).getBankUser().getName() +"\n"
-                						+ "¼Û±İÇÏ½Ç ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+        						textbox.setText("ì´ì²´í•˜ì‹œë ¤ëŠ” ê³„ì¢Œì£¼: " + bankAccounts.get(i).getBankUser().getName() +"\n"
+                						+ "ì†¡ê¸ˆí•˜ì‹¤ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
         					}
             				receiver = i;  // Storing receiver index in ArrayList 'bankAccounts'
             				state = 8;  // Set 'state' to move on to the next stage
@@ -849,7 +849,7 @@ public class Main {
         						textbox.setText("You entered the wrong account number!\n" + "Press Enter...");
         					}
         					else {
-        						textbox.setText("Àß¸øµÈ °èÁÂ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¿´½À´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        						textbox.setText("ì˜ëª»ëœ ê³„ì¢Œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         					}
         					state = 4;  // Set 'state' to move on to the option execution completion stage
         					type = 4;  // Set 'type' to distinguish the same 'state'
@@ -868,7 +868,7 @@ public class Main {
         					textbox.setText("Not enough money!\n" + "press ENTER...");
         				}
         				else {
-        					textbox.setText("±İ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù!\n" + "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        					textbox.setText("ê¸ˆì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤!\n" + "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         				}
         				state = 4;  // Set 'state' to move on to the option execution completion stage
         				type = 5;  // Set 'type' to distinguish the same 'state'
@@ -881,9 +881,9 @@ public class Main {
             						+ "Press ENTER..");
         				}
         				else {
-        					textbox.setText("ÀÌÃ¼ ±İ¾×: " + String.format("%.2f", transfer) + "\n"
-            						+ "ÇöÀç ÀÜ¾×: " + String.format("%.2f", bankAccounts.get(user).getBalance() - transfer) + "\n"
-            						+ "¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä..");
+        					textbox.setText("ì´ì²´ ê¸ˆì•¡: " + String.format("%.2f", transfer) + "\n"
+            						+ "í˜„ì¬ ì”ì•¡: " + String.format("%.2f", bankAccounts.get(user).getBalance() - transfer) + "\n"
+            						+ "ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”..");
         				}
         				bankAccounts.get(user).setBalance(bankAccounts.get(user).getBalance() - transfer);  // Set user's updated balance
         				bankAccounts.get(receiver).setBalance(bankAccounts.get(receiver).getBalance() + transfer);  // Set receiver's updated balance
@@ -900,7 +900,7 @@ public class Main {
         		textbox.setText("Please, insert your card and press ENTER...");
         	}
         	else {
-        		textbox.setText("Ä«µå¸¦ ³ÖÀº µÚ ¿£ÅÍ¸¦ ´­·¯ÁÖ¼¼¿ä...");
+        		textbox.setText("ì¹´ë“œë¥¼ ë„£ì€ ë’¤ ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”...");
         	}
         	state = 1;  // Set 'state' to move on to the next stage
         	type = 0;  // Set 'type' to distinguish the same 'state'
